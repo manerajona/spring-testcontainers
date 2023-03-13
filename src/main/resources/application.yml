@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb?currentSchema=payment_service&ssl=false
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+ws:
+  card:
+    base-url: http://localhost:8181
+    validate-uri: v1/cards/validate
